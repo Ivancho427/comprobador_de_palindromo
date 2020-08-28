@@ -1,12 +1,13 @@
 function palindrome(str) {    
-  let comparar = str.match(/\w+/gi).join("").toLowerCase();
-  str = str.match(/\w+/gi).reverse().join('').toLowerCase();
+  let comparar = str.match(/[A-Za-z0-9]/gi).join("").toLowerCase();
+  str = str.match(/[A-Za-z0-9]/gi).reverse().join('').toLowerCase();
   console.log(comparar === str);
   return comparar === str;
 
   }  
 palindrome("eye"); 
 console.log("El resultado del palindrome es:" +(palindrome("eye")));
+
 
 
 // palindrome("eye") debería devolver un booleano.
