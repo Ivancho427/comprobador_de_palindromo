@@ -1,12 +1,22 @@
 function palindrome(str) {    
   let comparar = str.match(/[A-Za-z0-9]/gi).join("").toLowerCase();
   str = str.match(/[A-Za-z0-9]/gi).reverse().join('').toLowerCase();
-  console.log(comparar === str);
-  return comparar === str;
 
+  if(comparar === str) {
+    console.log( "Es palindromo")
+  } else {
+    console.log('No es palindromo')
+  }
+ 
   }  
-palindrome("eye"); 
-console.log("El resultado del palindrome es:" +(palindrome("eye")));
+  palindrome("eye");
+  
+
+
+
+// var comprobacion = document.addEventListener('boton-palindrome', palindrome);
+
+// document.querySelector('.resultado').innerHTML = "El resultado de palindrome es " + palindrome("eye"); 
 
 
 
